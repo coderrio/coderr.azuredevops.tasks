@@ -1,0 +1,46 @@
+{
+    "id": "b8830377-0d8a-4499-8299-778243b5a850",
+    "name": "coderr-tasks",
+    "friendlyName": "Coderr Tasks",
+    "description": "Tasks used to modify an application in Coderr",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "1TCompany AB",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Echo $(samplestring)",
+    "inputs": [
+        {
+            "name": "apikey",
+            "type": "string",
+            "label": "API Key",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "API Key from system settings in Coderr"
+        },
+        {
+            "name": "sharedSecret",
+            "type": "string",
+            "label": "Shared secret",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Shared secret from system settings in Coderr"
+        },
+        {
+            "name": "coderrUrl",
+            "type": "string",
+            "label": "URL",
+            "defaultValue": "http://app.coderr.io",
+            "required": true,
+            "helpMarkDown": "URL to your Coderr server"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+}
